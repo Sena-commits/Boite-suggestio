@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'suggestionboxapp',
     'accounts',
+    'rest_framework',
+    
 ]
 
 MIDDLEWARE = [
