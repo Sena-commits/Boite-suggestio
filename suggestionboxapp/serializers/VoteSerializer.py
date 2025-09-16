@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from models import  Vote
+from suggestionboxapp.models import  Vote
 
 
 class VoteSerializer(serializers.ModelSerializer):

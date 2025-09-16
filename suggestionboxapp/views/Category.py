@@ -1,7 +1,7 @@
 from rest_framework import generics, permissions
-from permissions import IsModeratorOrAdmin
-from models import Category 
-from serializers import CategorySerializer
+from suggestionboxapp.permissions import IsModeratorOrAdmin
+from suggestionboxapp.models import Category 
+from suggestionboxapp.serializers import CategorySerializer
 
 
 class CategoryListView(generics.ListCreateAPIView):
