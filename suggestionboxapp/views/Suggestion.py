@@ -2,10 +2,10 @@ from rest_framework import generics
 from rest_framework.response import Response
 from django.db.models import F
 
-from models import Suggestion
-from serializers.SuggestionSerializer import  SuggestionListSerializer, SuggestionDetailSerializer
+from suggestionboxapp.models import Suggestion
+from suggestionboxapp.serializers.SuggestionSerializer import  SuggestionListSerializer, SuggestionDetailSerializer
 
-from permissions import IsOwnerOrReadOnly
+from suggestionboxapp.permissions import IsOwnerOrReadOnly
 
 
 

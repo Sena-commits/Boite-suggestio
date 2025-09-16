@@ -1,8 +1,14 @@
 from rest_framework import serializers
-from models import  Suggestion
-import UserSerializer, VoteSerializer, CategorySerializer, CommentSerializer
+from suggestionboxapp.models import  Suggestion
+from suggestionboxapp.serializers import (UserSerializer, VoteSerializer, CategorySerializer, CommentSerializer)
 
-
+from suggestionboxapp.serializers.UserSerializer import UserSerializer
+from rest_framework import serializers
+from .UserSerializer import UserSerializer
+from .CategorySerializer import CategorySerializer
+from .CommentSerializer import CommentSerializer
+from .VoteSerializer import VoteSerializer
+from suggestionboxapp.models import Suggestion
 
 
 class SuggestionListSerializer(serializers.ModelSerializer):

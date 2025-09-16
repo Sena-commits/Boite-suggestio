@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from models import  Comment
-import UserSerializer
+from suggestionboxapp.models import  Comment
+from suggestionboxapp.serializers.UserSerializer import UserSerializer
 
 
 
