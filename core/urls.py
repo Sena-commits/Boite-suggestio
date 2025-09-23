@@ -24,6 +24,9 @@ urlpatterns = [
     # Admin Django
     path('admin/', admin.site.urls),
     
+    path('api/v1/accounts/', include('accounts.urls')),
+
+    
     # API endpoints
     path('api/v1/', include('suggestionboxapp.urls')),
     
